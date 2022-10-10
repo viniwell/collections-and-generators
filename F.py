@@ -11,7 +11,7 @@ for i in range (n):
     dict[list[0]]=list[1:]
 for i in dict.keys():
     marks=' '.join(str(x) for x in dict[i])
-    dict[i]=(f'{marks} {((sum(x for x in dict[i]))/marks_count):.2f}')
+    dict[i]=(f'{marks} {((sum([x for x in dict[i]]))/marks_count):.2f}')
 for i in sorted(dict.keys()):
     print(i,dict[i])
 
