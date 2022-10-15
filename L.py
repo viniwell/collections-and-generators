@@ -12,7 +12,7 @@ while key==0:
         print(a[len(a)-1])
         a.pop(-1)
     elif n[0]=='front':
-        print(a[1])
+        print(a[0])
     elif n[0]=='size':
         print(len(a))
     elif n[0]=='clear':
