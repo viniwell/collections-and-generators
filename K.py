@@ -4,13 +4,13 @@ key=0
 while key==0:
     n=input().split()
     if n[0]=='push':
-        a.append(n[1])
+        a.insert(0,n[1])
         print('ok')
     elif n[0]=='pop':
-        print(a[len(a)-1])
-        a.pop(-1)
+        print(a[0])
+        a.pop(0)
     elif n[0]=='front':
-        print(a[1])
+        print(a[0])
     elif n[0]=='size':
         print(len(a))
     elif n[0]=='clear':
