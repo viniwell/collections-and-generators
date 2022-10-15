@@ -8,7 +8,7 @@ while key==0:
         print('ok')
     elif n[0]=='pop':
         print(a[len(a)-1])
-        a.pop(int(a[len(a)-1]))
+        a.pop(-1)
     elif n[0]=='back':
         print(a[len(a)-1])
     elif n[0]=='size':
