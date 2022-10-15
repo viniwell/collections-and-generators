@@ -7,5 +7,8 @@ for i in range(m+1):
     if i>n:
         ans.append(0)
     ans[i]+=int(b[i])
-answ=' '.join(str(x) for x in ans)
-print(answ)
+answ=' '.join(str(x) for x in ans if x!=0)
+if answ=='':
+    print(0)
+else:
+    print(answ)
