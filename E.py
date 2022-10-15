@@ -19,4 +19,5 @@ for i in range (n):
                 dict['python']+=list[i]               
 for i in dict.keys():
     dict[i]=(f'{(dict[i]/3):.2f}')
+print('-'*30)
 print(dict['math'], dict['phisics'],dict['python'])
