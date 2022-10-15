@@ -12,12 +12,14 @@ while key==0:
         print('ok')
     
     elif n[0]=='pop_back':
-        print(a[-1])
-        a.pop(-1)
+        if len(a)>0:
+            print(a.pop(0))
+        else: print('error')
     
     elif n[0]=='pop_front':
-        print(a[0])
-        a.pop(0)
+        if len(a)>0:
+            print(a.pop(0))
+        else: print('error')
     
     elif n[0]=='front':
         if len(a)>0:
