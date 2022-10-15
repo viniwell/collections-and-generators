@@ -9,7 +9,11 @@ for i in range (n):
         if i>0:
             list[i]=int(list[i])
     dict[list[0]]=list[1:]
+
+
 for i in dict.keys():
     dict[i]=(f'{((sum(x for x in dict[i]))/marks_count):.2f}')
+
+print('-'*30) 
 for i in magazine:
     print(i, dict[i])
