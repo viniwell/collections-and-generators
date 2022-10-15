@@ -2,7 +2,7 @@ a=[]
 
 key=0
 while key==0:
-    n=input().split()
+    n=input().split().strip()
     if n[0]=='push_back':
         a.append(n[1])
         print('ok')
@@ -20,7 +20,9 @@ while key==0:
         a.pop(0)
     
     elif n[0]=='front':
-        print(a[0])
+        if len(a)>0:
+            print(a[0])
+        else: print('error')
     
     elif n[0]=='size':
         print(len(a))
